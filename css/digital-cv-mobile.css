@@ -1,0 +1,34 @@
+/* Configuration for mobile mode styles */
+@media only screen and (max-width: 600px) {
+
+    /* Adjust maximum width for better responsiveness in mobile mode */
+    .container {
+        max-width: 550px;
+    }
+
+    /* Set width, flex direction to column, and specific width for mobile-friendly rows */
+    .row {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Set width to 550px for col-6 class in mobile mode */
+    .col-6 {
+        width: 550px;
+    }
+
+    /* Set width to 550px for col-3 class in mobile mode */
+    .col-3 {
+        width: 550px;
+    }
+
+    /* Styling for round class with specific width, circular shape, and border color in mobile mode */
+    .round {
+        width: 70px;
+        border: 1px solid rgb(139, 90, 208);
+        background-color: rgb(139, 90, 208);
+        padding: 10px;
+        border-radius: 50%;
+    }
+}

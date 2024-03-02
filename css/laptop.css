@@ -1,0 +1,193 @@
+/* Reset default margin, font, and box-sizing for all elements */
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: #6c757d;
+}
+
+/* Styling for the banner section */
+#banner {
+    /* Overlay gradient and background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+
+
+/* Additional spacing for text within the banner */
+.text-banner {
+    padding-top: 100px;
+}
+
+/* Styling for the main container */
+.container {
+    min-width: 750px;
+    width: auto;
+    height: auto;
+    min-width: initial;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+/* Background color styling for grey background */
+.bg-grey {
+    background: #f0f0f0;
+}
+
+/* Styling for a wrapper element */
+.wrapper {
+    position: relative;
+    width: 400px;
+    background: transparent;
+}
+
+/* Display style modifications for active wrapper elements */
+.wrapper.active {
+    display: contents;
+}
+
+/* Display style modifications for form-check-email active wrapper */
+.wrapper.form-check-email.active {
+    display: none;
+}
+
+/* Styling for hiding elements */
+.hide {
+    display: none;
+}
+
+/* Styling for hidden text with grey color */
+.hidden-text-1,
+.hidden-text-2,
+.hidden-text-3,
+.hidden-text-4,
+.hidden-text-5,
+.hidden-text-6 {
+    display: none;
+    color: gray;
+}
+
+/* Styling for job column elements */
+.col-job {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Styling for card header */
+.card-header {
+    background-color: white !important;
+    border-bottom: white !important;
+}
+
+
+/* Media query for screens with a minimum width of 992px */
+@media only screen and (min-width: 992px) {
+
+    /* Styling for the banner section on larger screens */
+    .banner {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Styling for the banner image on larger screens */
+    .banner-img {
+        width: auto;
+        height: 400px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 50% 50%;
+        filter: contrast(40%);
+        position: relative;
+        text-align: center;
+    }
+
+    /* Styling for the navigation bar on larger screens */
+    .nav-bar {
+        position: relative;
+        display: inline;
+    }
+
+    /* Styling for navigation items on larger screens */
+    .nav-item {
+        cursor: pointer;
+        color: #6c757d;
+    }
+
+    /* Styling for the avatar image on larger screens */
+    .avatar {
+        border: 15px solid;
+        border-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Styling for the target section on larger screens */
+    #target {
+        background-color: #f5f5f5;
+        padding-top: 50px;
+        padding-left: 150px;
+        height: 370px;
+        max-width: 50%;
+        text-align: left;
+    }
+
+    /* Styling for the personal-info section on larger screens */
+    #personal-info {
+        background-color: #f0f0f0;
+        padding-top: 50px;
+        height: 370px;
+    }
+
+    /* Styling for blue level display */
+    .level-blue {
+        display: inline-block;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 70px;
+        color: deepskyblue;
+        margin: 5px;
+    }
+
+    /* Styling for grey level display */
+    .level-grey {
+        display: inline-block;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 70px;
+        color: gray;
+        margin: 5px;
+    }
+
+    /* Styling for middle certificate separator */
+    .mid-cer {
+        border-left: 1px solid;
+        color: #d6c08d;
+    }
+
+    /* Styling for certificate images */
+    .img-cer {
+        width: 180px;
+    }
+
+    /* Styling for certificate text font size */
+    .font-cer {
+        font-size: 14px;
+    }
+
+    /* Styling for job column elements on larger screens */
+    .col-job {
+        width: calc(33.33% - 20px);
+    }
+}

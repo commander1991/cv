@@ -1,0 +1,31 @@
+/* Styling for a custom border class */
+.border-custom {
+    border: 10px solid;
+}
+
+/* Media query for screens with a minimum width of 992px */
+@media only screen and (min-width: 992px) {
+
+    /* Set height for elements with class row1-height on larger screens */
+    .row1-height {
+        height: 650px;
+    }
+
+    /* Set height for elements with class row2-height on larger screens */
+    .row2-height {
+        height: 350px;
+    }
+
+    /* Set height for elements with class row3-height on larger screens */
+    .row3-height {
+        height: 1000px;
+    }
+
+    /* Styling for round class with specific width, circular shape, and border color in larger screens */
+    .round {
+        width: 70px;
+        border: 1px solid rgb(139, 90, 208);
+        background-color: rgb(139, 90, 208);
+        border-radius: 50%;
+    }
+}

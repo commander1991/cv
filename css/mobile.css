@@ -1,0 +1,154 @@
+/* Media query for screens with a maximum width of 600px */
+@media only screen and (max-width: 768px) {
+
+    /* Styling for the banner section on small screens */
+    #banner {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(../images/banner.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 150px;
+    }
+
+    /* Additional spacing for text within the small-sized banner */
+    .text-banner {
+        padding-top: 50px;
+    }
+
+    /* Styling for the banner image on small screens */
+    .banner-img {
+        overflow: hidden;
+        filter: contrast(40%);
+        position: relative;
+    }
+
+    /* Styling for the responsive banner image on small screens */
+    .img-banner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 55%;
+        transform: translate(0%, 5%);
+    }
+
+    /* Styling for centered elements within the banner on small screens */
+    .centered {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Hide navigation item images on small screens */
+    .nav-item-img {
+        display: none;
+    }
+
+    /* Styling for the navigation list on small screens */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    /* Hide viewmore elements on small screens */
+    .viewmore {
+        display: none;
+    }
+
+    /* Hide hidden-cer section on small screens */
+    #hidden-cer {
+        display: none;
+    }
+
+    /* Styling for the target section on small screens */
+    #target {
+        background-color: whitesmoke;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    /* Styling for the personal-info section on small screens */
+    #personal-info {
+        background-color: oldlace;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    /* Adjust flex direction for the row class on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    /* Styling for items with aligned rows on small screens */
+    .item-align-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Styling for blue level display on small screens */
+    .level-blue {
+        display: inline-block;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 20px;
+        color: deepskyblue;
+        margin: 5px;
+    }
+
+    /* Styling for grey level display on small screens */
+    .level-grey {
+        display: inline-block;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 20px;
+        color: gray;
+        margin: 5px;
+    }
+   
+    /* Styling for mobile alignment and font size on small screens */
+    .mobile-align-items-center {
+        align-self: start;
+        font-size: 16px !important;
+        line-height: 1.2;        
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Adjust width for col-5 class on small screens */
+    .col-5 {
+        width: auto !important;
+    }
+
+    /* Styling for certificate images on small screens */
+    .img-cer {
+        width: 100%;
+    }
+
+    /* Adjust width for font-cer class on small screens */
+    .font-cer {
+        width: auto !important;
+    }
+
+    /* Styling for space-cv section margin on small screens */
+    .space-cv {
+        margin-top: 20px;
+    }
+
+    /* Styling for the footer-info section on small screens */
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Hide brands-footer section on small screens */
+    .brands-footer {
+        display: none;
+    }
+}

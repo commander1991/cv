@@ -1,0 +1,51 @@
+/* Configuration for tablet mode styles */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    
+    /* Adjust maximum width for better responsiveness */
+    .container {
+        max-width: 100%;
+    }
+
+    /* Set width to 100% and flex direction to column for tablet-friendly rows */
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Set width to 100% for col-6 class in tablet mode */
+    .col-6 {
+        width: 100%;
+    }
+
+    /* Set width to 100% for col-3 class in tablet mode */
+    .col-3 {
+        width: 100%;
+    }
+
+    /* Styling for round class with circular shape and border color */
+    .round {
+        width: inherit;
+        border: 1px solid rgb(139, 90, 208);
+        background-color: rgb(139, 90, 208);
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    /* Order adjustments for specific elements in tablet mode */
+    #first {
+        order: 1;
+    }
+
+    #second {
+        order: 3;
+    }
+
+    #third {
+        order: 2;
+    }
+
+    #fourth {
+        order: 4;
+    }
+}

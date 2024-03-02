@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tags for character set, compatibility, and viewport -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Linking external CSS stylesheets for different screen sizes -->
+	<link rel="stylesheet" href="./css/laptop.css">
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+
+	<!-- Loading Font Awesome icons from a CDN -->
+	<script src="https://kit.fontawesome.com/fd3965e256.js" crossorigin="anonymous"></script>
+
+	<!-- Linking additional custom font styles -->
+	<link rel="stylesheet" href="./css/font.css">
+
+	<!-- Loading Font Awesome version 4.7 for compatibility -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Loading Bootstrap CSS from a CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Setting the title of the HTML document -->
+	<title>Assignment 03</title>
+</head>
+
+<body>
+	<!-- Banner Section -->
+	<section id="banner">
+
+		<!-- Container for content alignment and spacing -->
+		<div class="container">
+
+			<!-- Banner content wrapper -->
+			<div class="banner">
+
+				<!-- Text centering within the banner -->
+				<div class="text-banner">
+
+					<!-- Main heading with white color -->
+					<h1 style="color: white;">Phạm Đình Khôi</h1>
+
+					<!-- Subtitle with white color -->
+					<span style="color: white">Full Stack Developer</span>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End of Banner Section -->
+
+	<!-- Navigation Section -->
+	<section id="navigation">
+
+		<!-- Navigation Bar with small font size -->
+		<div class="nav-bar">
+
+			<!-- Unordered list for navigation items, centered horizontally -->
+			<ul class="nav justify-content-center ">
+
+				<!-- Navigation Item - THÔNG TIN -->
+				<li class="nav-item p-4 border-start">
+					<a href="#THÔNG TIN">
+						<div href="#footer">THÔNG TIN
+							<i class="fa-solid fa-user text-primary ps-3"></i>
+						</div>
+					</a>
+				</li>
+
+				<!-- Navigation Item - LÝ LỊCH -->
+				<li class="nav-item p-4 border-start">
+					<a href="#LÝ LỊCH">
+						<div>LÝ LỊCH
+							<i class="fa-solid fa-id-card text-primary ps-3"></i>
+						</div>
+					</a>
+				</li>
+
+				<!-- Navigation Item with Image (Avatar) -->
+				<li class="nav-item-img">
+					<a class="nav-link">
+						<!-- Content with the name and role -->
+						<div>
+							<div class="text-center fs-4">Phạm Đình Khôi</div>
+							<div class="text-center" style="font-size: 13px; color: #a9a9a9">Fulstack Developer</div>
+						</div>
+
+						<!-- Avatar image -->
+						<img src="./images/avatar.jpg" alt="avatar" class="avatar">
+					</a>
+				</li>
+
+				<!-- Navigation Item - CHỨNG CHỈ -->
+				<li class="nav-item p-4 border-start">
+					<a href="#certificate">
+						<div>CHỨNG CHỈ
+							<i class="fa-solid fa-envelope text-primary ps-3"></i>
+						</div>
+					</a>
+				</li>
+
+				<!-- Navigation Item - DỰ ÁN -->
+				<li class="nav-item  p-4 border-start">
+					<a href="#project">
+						<div>DỰ ÁN
+							<i class="fa-solid fa-star text-primary ps-3"></i>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+	<!-- End of Navigation Section -->
+
+	<!-- Target and Personal Information Section -->
+	<section id="target-info">
+
+		<!-- Container for the section content -->
+		<div class="container-fluid">
+
+			<!-- Row containing two columns: Target and Personal Information -->
+			<div class="row">
+
+				<!-- Column for Career Target -->
+				<div class="container">
+
+				</div>
+				<div class="col" id="target">
+
+					<!-- Section title for Career Target -->
+					<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+
+					<!-- Paragraph describing career target -->
+					<p>
+						<br />
+						Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+						Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+						trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+						thức đã được trau dồi và không ngừng học hỏi để phát triển
+						bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+					</p>
+
+				</div>
+
+				<!-- Column for Personal Information -->
+				<div class="col" id="personal-info">
+
+					<!-- Section title for Personal Information -->
+					<h1 class="section-title">Thông tin cá nhân</h1>
+
+					<!-- Wrapper containing email form and hidden personal information -->
+					<div class="wrapper">
+
+						<!-- Email Form for Unlocking Information -->
+						<div class="form-check-email hide">
+							<form id="form" action="#">
+
+								<!-- Input box for email -->
+								<div class=" inputBox">
+									<label class="form-label" for="email">Email address</label>
+									<input type="email" class="form-control" id="email" name="email"
+										style="width: fit-content; margin-bottom: 20px;"
+										placeholder="Enter email to unlock info">
+								</div>
+
+								<!-- Submit button with email validation -->
+								<button id="submit" type="button" class="btn btn-primary"
+									onclick="validateEmail(event)">Submit</button>
+
+							</form>
+						</div>
+
+						<!-- Hidden Personal Information -->
+						<div class="form-show" id="form-show">
+
+							<!-- Unordered list containing personal information -->
+							<ul class="info">
+								<br />
+								<li><span>Giới tính</span> : Nam</li>
+								<li><span>Ngày sinh</span> : 14/09/1991</li>
+								<li><span>Điện thoại</span> : (+84) 983627899</li>
+								<li><span>Email</span> : khoipdfx19995@funix.edu.vn</li>
+								<li><span>Địa chỉ</span> : 5/1 khu phố 8, thị trấn Hóc Môn, HM, HCM</li>
+								<li><span>Website</span> : https://abc.tech</li>
+								<br />
+
+								<!-- Social media icons -->
+								<i class="icon-twitter text-info"></i>
+								<i class="icon-facebook text-info"></i>
+								<i class="icon-gplus text-info"></i>
+								<i class="icon-linkedin text-info"></i>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Target and Personal Information Section -->
+
+	<!-- Job Information Section -->
+	<section id="job-info target-section" class="py-4">
+
+		<!-- Container for the section content -->
+		<div class="container mt-3">
+
+			<!-- Fluid container for responsive layout -->
+			<div class="container-fluid">
+
+				<!-- Row with job-related content -->
+				<div class="row justify-content-center" id="job-container">
+
+					<!-- First Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="first">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row collapsed align-items-start" onclick="toggleContent('1')"
+												onmouseover="showText('1')" onmouseout="hideText('1')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse1"
+												aria-expanded="false" aria-controls="flush-collapse1"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Kinh nghiệm</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-toolbox style="scale: 200%;"></i>
+												</div>
+												<div class="col-4 btn btn-warning viewmore" id="viewmore1"
+													style="display: none">
+													<h6 id="hiddenText1" class="hidden-text-1">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with job details -->
+							<div style="border-top: white;">
+								<div id="flush-collapse1" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+
+										<h3>Công ty X</h3>
+										05/2011 - 01/2021
+										<br />
+										- Accounting IT
+										<br />
+										- Customer Service
+										<br />
+										- Training new member
+										<br /><br />
+										<h3>Start-up homestay</h3>
+										01/2011 - 01/2023
+										<br />
+										- Accounting IT
+										<br />
+										- Customer Service
+										<br />
+										- Homestay manager
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="second">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row align-items-start collapsed" onclick="toggleContent('2')"
+												onmouseover="showText('2')" onmouseout="hideText('2')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse2"
+												aria-expanded="false" aria-controls="flush-collapse2"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Học vấn</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-pencil style="scale: 200%;"></i>
+												</div>
+												<div class="btn btn-warning viewmore" id="viewmore2"
+													style="display: none">
+													<h6 id="hiddenText2" class="hidden-text-2">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with educational details -->
+							<div>
+								<div id="flush-collapse2" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<h3>VTC Academy</h3>
+										04/2021
+										<br />
+										- Tốt nghiệp khoá AI Engineer
+										<br />
+										- Grade:
+										<br />
+										1. Project Source Code: 95/100
+										<br />
+										2. Project Presentation: 95/100
+										<br />
+										3. Project Package: 85/100
+										<br /><br />
+										<h3>Funix</h3>
+										06/2023 - nay
+										<br />
+										- Đang học Fullstack Developer (70%)
+										<br />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Third Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="third">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row align-items-start collapsed" onclick="toggleContent('3')"
+												onmouseover="showText('3')" onmouseout="hideText('3')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
+												aria-expanded="false" aria-controls="flush-collapse3"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Hoạt động</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-toolbox style="scale: 200%;"></i>
+												</div>
+												<div class="btn btn-warning viewmore" id="viewmore3"
+													style="display: none">
+													<h6 id="hiddenText3" class="hidden-text-3">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with activity details -->
+							<div>
+								<div id="flush-collapse3" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<h3>Công ty X</h3>
+										03/2019 - 05/2019
+										<br /><br />
+										- Giải 3
+										<br />
+										- Đề tài: đề xuất cải tiến quy trình bảo mật, chống gian lận.
+										<br /><br />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fourth Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="fourth">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row align-items-start collapsed" onclick="toggleContent('4')"
+												onmouseover="showText('4')" onmouseout="hideText('4')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+												aria-expanded="false" aria-controls="flush-collapse4"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Sở thích</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-telescope style="scale: 200%;"></i>
+												</div>
+												<div class="btn btn-warning viewmore" id="viewmore4"
+													style="display: none">
+													<h6 id="hiddenText4" class="hidden-text-4">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with hobbies details -->
+							<div>
+								<div id="flush-collapse4" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div class="row mt-3 text-center item-align-row">
+											<div class="col-3">
+												<i
+													class="fa-brands fa-itunes-note my-3 text-info border border-info rounded-circle p-3"></i>
+												<h6>Âm nhạc</h6>
+											</div>
+											<div class="col-3">
+												<i
+													class="fa-solid fa-umbrella-beach my-3 text-info border border-info rounded-circle p-3"></i>
+												<h6>Du lịch</h6>
+											</div>
+											<div class="col-3">
+												<i
+													class="fa-solid fa-gamepad my-3 text-info border border-info rounded-circle p-3"></i>
+												<h6>Chơi game</h6>
+											</div>
+											<div class="col-3">
+												<i
+													class="fa-solid fa-kitchen-set my-3 text-info border border-info rounded-circle p-3"></i>
+												<h6>Nấu ăn</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fifth Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="fifth">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row align-items-start collapsed" onclick="toggleContent('5')"
+												onmouseover="showText('5')" onmouseout="hideText('5')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+												aria-expanded="false" aria-controls="flush-collapse5"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Ngôn ngữ</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-mic style="scale: 200%;"></i>
+												</div>
+												<div class="btn btn-warning viewmore" id="viewmore5"
+													style="display: none">
+													<h6 id="hiddenText5" class="hidden-text-5">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with language details -->
+							<div>
+								<div id="flush-collapse5" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div style="margin-top: 30px; margin-bottom: 5px;">
+											<h5>English</h5>
+										</div>
+										<div class="level-blue" style="margin-left: 0;"></div>
+										<div class="level-blue"></div>
+										<div class="level-grey"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sixth Job Card -->
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="sixth">
+
+						<!-- Card with job information -->
+						<div class="card" style="width: 100%;">
+
+							<!-- Card header with accordion for toggle functionality -->
+							<div class="card-header">
+								<div class="accordion accordion-flush">
+									<div class="accordion-item">
+										<div class="accordion-header">
+											<div class="row align-items-start collapsed" onclick="toggleContent('6')"
+												onmouseover="showText('6')" onmouseout="hideText('6')" type="button"
+												data-bs-toggle="collapse" data-bs-target="#flush-collapse6"
+												aria-expanded="false" aria-controls="flush-collapse6"
+												style="flex-direction: row;">
+												<div class="col-8">
+													<h4>Kỹ năng</h4>
+												</div>
+												<div class="col-4 align-items-start">
+													<i class=ic-tools-2 style="scale: 200%;"></i>
+												</div>
+												<div class="btn btn-warning viewmore" id="viewmore6"
+													style="display: none">
+													<h6 id="hiddenText6" class="hidden-text-6">
+														<i class="fa-solid fa-caret-down me-1"></i>View more
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Body of the card with skills details -->
+							<div>
+								<div id="flush-collapse6" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div style="margin-top: 30px; margin-bottom: 5px;">
+											<h5>HTML/CSS: Fundamental</h5>
+										</div>
+										<div class="level-blue" style="margin-left: 0;"></div>
+										<div class="level-blue"></div>
+										<div class="level-grey"></div>
+
+										<div style="margin-top: 30px; margin-bottom: 5px;">
+											<h5>Javascript: Intermediate</h5>
+										</div>
+										<div class="level-blue" style="margin-left: 0;"></div>
+										<div class="level-blue"></div>
+										<div class="level-grey"></div>
+
+										<div style="margin-top: 30px; margin-bottom: 5px;">
+											<h5>NodeJS: Intermediate</h5>
+										</div>
+										<div class="level-blue" style="margin-left: 0;"></div>
+										<div class="level-blue"></div>
+										<div class="level-blue"></div>
+
+										<div style="margin-top: 30px; margin-bottom: 5px;">
+											<h5>Bootstrap 5: Fundamental</h5>
+										</div>
+										<div class="level-blue" style="margin-left: 0;"></div>
+										<div class="level-grey"></div>
+										<div class="level-grey"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Job Information Section -->
+
+	<!-- Certificate Section -->
+	<section id="certificate" class="py-4 bg-grey">
+		<div class="container pb-3">
+			<!-- Section Title -->
+			<h1 class="section-title" style="padding-top: 20px; padding-left: 20px;">
+				Chứng chỉ - Giải thưởng
+			</h1>
+
+			<!-- Certificate Entries -->
+			<div class="row">
+
+				<!-- Certificate Entry 1 -->
+				<div class="col-sm-12 col-md-6 p-3" style="border-bottom: 1px solid; border-color: #d6c08d;">
+					<div class="row my-2">
+						<!-- Certificate Image -->
+						<div class="col-5 pb-3 img-container">
+							<img src="./images/cer1.jpg" class="img-cer">
+						</div>
+						<!-- Certificate Information -->
+						<div class="col-7 font-cer">
+							<strong>CHỨNG CHỈ AI ENGINEER - VTC ACADEMY</strong>
+							<br />
+							- Chứng chỉ thuộc chương trình AI Specialist<br />
+							- GPA:
+							1. Project Source Code: 95/100
+							2. Project Presentation: 95/100
+							3. Project Package: 85/100
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Certificate Section -->
+
+	<!-- Project Section -->
+	<section id="project" class="py-4">
+		<div class="container">
+			<!-- Section Title -->
+			<h1 class="section-title" style="padding: 20px;">
+				Dự án
+			</h1>
+			<!-- Project Container -->
+			<div class="project-container">
+				<!-- Project 1 -->
+				<div class="row gap-3">
+					<div class="col border">
+						<div class="row">
+							<!-- Project Image -->
+							<div class="card">
+								<img src="./images/Untitled.png" class="card-img-top">
+							</div>
+							<!-- Project Title/Link -->
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									CV CÁ NHÂN
+								</div>
+							</a>
+							<!-- Project Details -->
+							<div class="card-body">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
+										2024
+									</div>
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
+										<!-- Project Role and Organization -->
+										<span class="col-md-10 space-cv px-2">
+											<i class="fa-solid fa-user"></i>
+											<span>FUNiX</span>
+										</span>
+										<span class="col-md-10 space-cv text-nowrap ps-2">
+											<i class="fa-regular fa-lightbulb"></i>
+											<span>Developer</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Project Additional Information -->
+						<div class="row">
+							<table class="table border-top">
+								<tbody>
+									<tr>
+										<td>Mô tả</td>
+										<td>Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề
+											nghiệp.</td>
+									</tr>
+									<tr>
+										<td>Nhiệm vụ</td>
+										<td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+									</tr>
+									<tr style="border: white;">
+										<td>Công nghệ</td>
+										<td>- HTML, CSS</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- Project 2 -->
+					<div class="col border hide">
+						<!-- ... (similar structure as Project 1) -->
+						<div class="row">
+							<div class="card">
+								<img src="./images/project_2.png" class="card-img-top">
+							</div>
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									TRANG WEB QUẢN LÝ THÚ CƯNG
+								</div>
+							</a>
+							<div class="card-body">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
+										2021
+									</div>
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
+										<!-- Project Role and Organization -->
+										<span class="col-md-10 space-cv px-2">
+											<i class="fa-solid fa-user"></i>
+											<span>FUNiX</span>
+										</span>
+										<span class="col-md-10 space-cv text-nowrap ps-2">
+											<i class="fa-regular fa-lightbulb"></i>
+											<span>Developer</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row border-top">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Mô tả</td>
+										<td>
+											Ứng dụng giúp quản lý các thông tin cảu thú cưng như: Cân nặng, giống,
+											tình
+											trạng
+											tiêm chủng,... Bao gồm các chức năng thêm/sửa/xoá. </td>
+									</tr>
+									<tr>
+										<td>Nhiệm vụ</td>
+										<td>- Phát triển code - Review code - Tối
+											ưu
+											code
+											-
+											Xử lý lỗi</td>
+									</tr>
+									<tr style="border: white;">
+										<td>Công nghệ</td>
+										<td>- HTML, CSS, Javascript</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- Project 3 -->
+					<div class="col border hide">
+						<!-- ... (similar structure as Project 1) -->
+						<div class="row">
+							<div class="card">
+								<img src="./images/project_3.png" class="card-img-top">
+							</div>
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									TRANG WEB XEM TIN TỨC
+								</div>
+							</a>
+							<div class="card-body">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
+										2021
+									</div>
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
+										<!-- Project Role and Organization -->
+										<span class="col-md-10 space-cv px-2">
+											<i class="fa-solid fa-user"></i>
+											<span>FUNiX</span>
+										</span>
+										<span class="col-md-10 space-cv text-nowrap ps-2">
+											<i class="fa-regular fa-lightbulb"></i>
+											<span>Developer</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row border-top">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Mô tả</td>
+										<td>
+											Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm
+											kiếm
+											các
+											tin
+											tức dựa theo các từ khoá. </td>
+									</tr>
+									<tr>
+										<td>Nhiệm vụ</td>
+										<td>- Phát triển code - Review code - Tối
+											ưu
+											code
+											-
+											Xử lý lỗi</td>
+									</tr>
+									<tr style="border: white;">
+										<td>Công nghệ</td>
+										<td>- HTML, CSS, Javascript</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Project Section -->
+
+
+	<!-- Footer Section -->
+	<section id="footer" class="py-4 bg-grey">
+		<div class="container">
+			<!-- Footer Information Row -->
+			<div class="row footer-info text-center" style="font-size: 25px;">
+				<!-- Facebook Column -->
+				<div class="col text-end">
+					<i class="fa-brands fa-facebook text-primary p-1"></i>
+					<span class="brands-footer" style="font-size: 20px;">Facebook</span>
+				</div>
+				<!-- Linkedin Column -->
+				<div class="col">
+					<i class="fa-brands fa-linkedin-in text-primary p-1"></i>
+					<span class="brands-footer" style="font-size: 20px;">Linkedin</span>
+				</div>
+				<!-- Github Column -->
+				<div class="col text-start">
+					<i class="fa-brands fa-github text-primary p-1"></i>
+					<span class="brands-footer" style="font-size: 20px;">Github</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Footer Section -->
+
+	<!-- External Masonry Library Script -->
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+		integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+		async></script>
+
+	<!-- Local Script File -->
+	<script src="script.js"></script>
+
+	<!-- Bootstrap JavaScript Library -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
